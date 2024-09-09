@@ -11,7 +11,10 @@ import SwiftUI
 struct iDoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ListView()
+            }
+         
         }
     }
 }

@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DB9DDAC32C8E974000B75CAF /* iDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAC22C8E974000B75CAF /* iDoApp.swift */; };
-		DB9DDAC52C8E974000B75CAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAC42C8E974000B75CAF /* ContentView.swift */; };
 		DB9DDAC72C8E974100B75CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9DDAC62C8E974100B75CAF /* Assets.xcassets */; };
 		DB9DDACA2C8E974100B75CAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9DDAC92C8E974100B75CAF /* Preview Assets.xcassets */; };
+		DB9DDAD22C8E97C400B75CAF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAD12C8E97C400B75CAF /* ListView.swift */; };
+		DB9DDAD42C8E994D00B75CAF /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAD32C8E994D00B75CAF /* ToDoItemView.swift */; };
+		DB9DDAD62C8E9BCB00B75CAF /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAD52C8E9BCB00B75CAF /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB9DDABF2C8E974000B75CAF /* iDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9DDAC22C8E974000B75CAF /* iDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDoApp.swift; sourceTree = "<group>"; };
-		DB9DDAC42C8E974000B75CAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB9DDAC62C8E974100B75CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB9DDAC92C8E974100B75CAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB9DDAD12C8E97C400B75CAF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DB9DDAD32C8E994D00B75CAF /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
+		DB9DDAD52C8E9BCB00B75CAF /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,8 @@
 		DB9DDAC12C8E974000B75CAF /* iDo */ = {
 			isa = PBXGroup;
 			children = (
+				DB9DDAD02C8E97A500B75CAF /* Views */,
 				DB9DDAC22C8E974000B75CAF /* iDoApp.swift */,
-				DB9DDAC42C8E974000B75CAF /* ContentView.swift */,
 				DB9DDAC62C8E974100B75CAF /* Assets.xcassets */,
 				DB9DDAC82C8E974100B75CAF /* Preview Content */,
 			);
@@ -65,6 +69,16 @@
 				DB9DDAC92C8E974100B75CAF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB9DDAD02C8E97A500B75CAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB9DDAD12C8E97C400B75CAF /* ListView.swift */,
+				DB9DDAD32C8E994D00B75CAF /* ToDoItemView.swift */,
+				DB9DDAD52C8E9BCB00B75CAF /* AddTaskView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9DDAC52C8E974000B75CAF /* ContentView.swift in Sources */,
 				DB9DDAC32C8E974000B75CAF /* iDoApp.swift in Sources */,
+				DB9DDAD42C8E994D00B75CAF /* ToDoItemView.swift in Sources */,
+				DB9DDAD22C8E97C400B75CAF /* ListView.swift in Sources */,
+				DB9DDAD62C8E9BCB00B75CAF /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
