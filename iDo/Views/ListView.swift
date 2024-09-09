@@ -8,20 +8,16 @@
 import SwiftUI
 
 struct ListView: View {
-    
-    @State var items: [ItemModel] = [
-    ItemModel(title: "Watch a iOS video", isCompleted: true),
-    ItemModel(title: "Let me brush up my skills", isCompleted: false),
-    ItemModel(title: "Start studying for exams", isCompleted: false),
-    ItemModel(title: "Have lunch", isCompleted: true)
-]
-    
-    
+    @EnvironmentObject var listViewModel: ListViewModel
+
+        
     var body: some View {
         List {
-            ForEach(items) { item in
+            ForEach(listViewModel.items) { item in
                 ToDoItemView(item: item)
             }
+            .onDelete(perform: listViewModel.deleteItem)
+            .onMove(perform: listViewModel.moveItem)
             
         }.listStyle(.plain)
         .navigationTitle("ToDo List")
@@ -31,11 +27,13 @@ struct ListView: View {
         
         )
     }
+
 }
 
 #Preview {
     NavigationView {
         ListView()
+            .environmentObject(ListViewModel())
     }
 }
 

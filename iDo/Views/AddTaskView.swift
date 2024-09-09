@@ -9,7 +9,10 @@ import SwiftUI
 
 struct AddTaskView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText:String = ""
+    @State var showAlert: Bool = false
     
     var body: some View {
         ScrollView {
@@ -25,7 +28,7 @@ struct AddTaskView: View {
                 Spacer()
                         .frame(height: 50)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: save, label: {
                     Text("Save".uppercased())
                         .foregroundStyle(.white)
                         .font(.headline)
@@ -38,11 +41,38 @@ struct AddTaskView: View {
             .padding(14)
         }
         .navigationTitle("Add New Task")
+        .alert(isPresented: $showAlert, content: getAlert)
     }
+    
+    func textIsAppropriate() -> Bool {
+        if(textFieldText.count < 4) {
+            showAlert.toggle()
+            return false
+        }
+        return true
+    }
+    
+    func save() {
+        if textIsAppropriate() {
+            listViewModel.addItem(title: textFieldText)
+            presentationMode.wrappedValue.dismiss()
+        }
+        else {
+            
+        }
+    }
+    
+    func getAlert() -> Alert {
+        return Alert(title: Text("Task must be 4 characters or long! 🧐"))
+    }
+    
+    
+    
 }
 
 #Preview {
     NavigationView {
         AddTaskView()
+            .environmentObject(ListViewModel())
     }
 }
