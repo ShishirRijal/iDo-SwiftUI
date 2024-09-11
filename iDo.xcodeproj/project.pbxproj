@@ -15,6 +15,7 @@
 		DB9DDAD62C8E9BCB00B75CAF /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAD52C8E9BCB00B75CAF /* AddTaskView.swift */; };
 		DB9DDAD92C8EA06300B75CAF /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDAD82C8EA06300B75CAF /* ItemModel.swift */; };
 		DB9DDADC2C8EA69000B75CAF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DDADB2C8EA69000B75CAF /* ListViewModel.swift */; };
+		DB9DDADE2C91C2C500B75CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9DDADD2C91C2C500B75CAF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DB9DDAD52C8E9BCB00B75CAF /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		DB9DDAD82C8EA06300B75CAF /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		DB9DDADB2C8EA69000B75CAF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		DB9DDADD2C91C2C500B75CAF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DB9DDAD12C8E97C400B75CAF /* ListView.swift */,
 				DB9DDAD32C8E994D00B75CAF /* ToDoItemView.swift */,
 				DB9DDAD52C8E9BCB00B75CAF /* AddTaskView.swift */,
+				DB9DDADD2C91C2C500B75CAF /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9DDADE2C91C2C500B75CAF /* LaunchScreen.storyboard in Resources */,
 				DB9DDACA2C8E974100B75CAF /* Preview Assets.xcassets in Resources */,
 				DB9DDAC72C8E974100B75CAF /* Assets.xcassets in Resources */,
 			);
@@ -314,6 +318,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iDo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iDo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,6 +332,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = np.com.shishirrijal.iDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +352,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iDo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iDo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -354,6 +366,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = np.com.shishirrijal.iDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
